@@ -1,0 +1,330 @@
+@import "./blocks/header";
+@import "./blocks/footer";
+
+
+.top-section {
+
+    h1 {
+        color: #A9D7C2;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 150%;
+        text-transform: uppercase;
+    }
+
+}
+
+.row.blocks-askew {
+
+    background: #212121;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #8C8C8C;
+    overflow: hidden;
+
+    .first-block,
+    .cta-wrap {
+
+        padding-left: 28px;
+        max-width: 602px;
+
+        .first-block-txt,
+        .cta-wrap-txt {
+           margin-bottom: 40px; 
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+    }
+
+}
+
+.blocks-askew {
+
+    > div.col-6:last-child {
+        padding-right: 0;
+    }
+
+    .second-block {
+        -webkit-clip-path: polygon(18% 0,100% 0,100% 100%,0 100%);
+        clip-path: polygon(18% 0,100% 0,100% 100%,0 100%);
+        background-color: #A9D7C2;
+        padding-right: 0;
+    }
+
+}
+
+.cards-section {
+
+    .card-title {
+
+        padding-block: 11px;
+        background-color: #A9D7C2;
+        margin-bottom: 40px;
+
+        h2 {
+            text-align: center;
+            color: #131313;
+            font-weight: 700;
+        }
+
+    }
+
+    .container {
+        border-radius: 10px;
+        background-color: #212121;
+        border: 1px solid #8C8C8C;
+        overflow: hidden;
+        padding-bottom: 10px;
+    }
+
+}
+
+.cards-group {
+
+    .card-col {
+        margin-bottom: 30px;    
+    }
+
+    .card-item {
+
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        border: 1px solid #8C8C8C;
+        border-radius: 10px;
+        background-color: #131313;
+        margin-bottom: 30px;
+        overflow: hidden;
+
+        .card-title-wrap {
+
+            height: 100%;
+            min-height: 38.5px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-color: #131313;
+            color: #A9D7C2; 
+            text-align: center;
+            padding-inline: 16px;
+
+            h4 {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 0;
+            }
+
+        }
+
+    }
+
+}
+
+.form {
+}
+
+.form.question-form {
+    padding: 50px;
+
+    h3 {
+        color: #A9D7C2; 
+        font-weight: 700;
+        margin-bottom: 25px;
+        letter-spacing: 0%;
+    }
+
+    input, select, textarea {
+        background-color: #131313;
+        border-radius: 5px;
+        color: #D1D1D1;
+        padding-left: 20px; 
+        border: 1px solid rgb(140, 140, 140);
+    }
+
+    input, select {
+        height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .input-row {
+        div {
+            width: 100%;
+        }
+        > div:first-child {
+            padding-right: 10px;
+        }
+        > div:last-child {
+            padding-left: 10px;
+        }
+        .second-block {
+            -webkit-clip-path: polygon(28% 0,100% 0,100% 100%,0 100%);
+            clip-path: polygon(28% 0,100% 0,100% 100%,0 100%);
+        }
+    }
+
+    .input-name {
+    }
+    .input-tel {
+    }
+    
+    textarea {
+        padding-top: 14px;
+    }
+
+    .custom-select {
+        position: relative;
+        min-width: 200px;
+
+        select {
+            -webkit-appearance: none;
+            padding-left: 20px;
+            width: 100%;
+            border: 1px solid #8d8d8d;
+            border-radius: 5px;
+            background: #131313;
+            color: #8d8d8d;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 16px;
+            transition: all 150ms ease;
+
+            option {
+                color: #D1D1D1;
+            }
+
+            option[value=""][disabled] {
+                display: none;
+            }
+
+            &:required:invalid {
+                color: #D1D1D1;
+            }
+
+            &:focus {
+                outline: none;
+                border-color: #D1D1D1;
+                box-shadow: 0 0 0 2px rgba(255,255,255,0.2);
+            }
+        }
+
+        select:hover + svg {
+            stroke: #A9D7C2;
+        }
+
+        svg {
+            position: absolute;
+            right: 18px;
+            top: calc(50% - 13px);
+            width: 16px;
+            height: 10px;
+            stroke-width: 2px;
+            stroke: #9098a9;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            pointer-events: none;
+        }
+    }
+
+    .custom-sprites {
+        position: absolute;
+        width: 0;
+        height: 0;
+        pointer-events: none;
+        user-select: none;
+    }
+
+    button {
+        color: #131313;
+        background-color: #D1D1D1;
+        margin-top: 25px;
+        border-radius: 5px;
+        padding-inline: 45px;
+        height: 58px;
+    }
+}
+
+.block-with-form {
+
+    .blocks-askew {
+
+        align-items: stretch;
+
+        > div:first-child {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        > div:last-child {
+            background-color: #131313;
+        }
+
+        .first-block {
+            position: relative;
+            flex: 1;
+            display: flex; 
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+            max-width: 100%;
+
+            &::after {
+                position: absolute;
+                background-color: #131313;
+                -webkit-clip-path: polygon(99% 0, 100% 0, 100% 100%, 0 100%);
+                clip-path: polygon(99% 0, 100% 0, 100% 100%, 0 100%);
+                right: -2px;
+                top: 0;
+                content: '';
+                width: 142px;
+                height: 100%;
+            }
+
+            p {
+                max-width: 500px;
+            }
+        }
+
+    }
+
+}
+
+.input-name {
+}
+
+.input-tel {
+}
+
+@media only screen and (min-width: 992px) {
+
+    .flex-row.row {
+        display: flex;
+        flex-wrap: wrap;
+
+        > [class*='col-'] {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}
+
+
+@media (min-width: 1440px) {
+
+    .cards-group {
+        
+        padding-inline: 20px;
+
+        .card-col {
+            padding-inline: 20px;
+        }
+
+    }
+
+}

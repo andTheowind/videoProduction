@@ -1,0 +1,322 @@
+.header {
+  padding-block: 40px;
+  color: #ffffff;
+}
+.header ul li, .header ul li a {
+  color: #ffffff;
+}
+.header ul li a:hover {
+  cursor: pointer;
+}
+.header .container .row {
+  justify-content: space-between;
+  align-items: center;
+}
+.header .first-col {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+}
+.header .second-col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 0;
+}
+
+.first-col .top-menu li:not(:last-child) {
+  margin-right: 30px;
+}
+.first-col .top-menu li a {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.top-menu .top-menu-list {
+  display: flex;
+  justify-content: space-between;
+}
+.top-menu .top-menu-item .top-menu-item a.active {
+  color: #A9D7C2;
+}
+
+.second-col .header-info-list li:first-child {
+  margin-bottom: 5px;
+}
+.second-col .header-info-list li a {
+  font-size: 16px;
+}
+.second-col .header-info,
+.second-col .header-soc {
+  display: flex;
+}
+.second-col .header-soc ul li:not(:last-child) {
+  margin-right: 11.5px;
+}
+
+.header-logo {
+  max-width: 120px;
+}
+
+.header-info .header-info-list:first-child {
+  margin-right: 26.5px;
+}
+.header-info .header-info-list {
+  display: flex;
+  flex-direction: column;
+}
+.header-info .header-info-list .header-info-item {
+  line-height: 150%;
+}
+
+.header-soc-icons {
+  display: flex;
+}
+.header-soc-icons .header-soc-item:not(:last-child) {
+  margin-right: 11.5px;
+}
+
+.top-section h1 {
+  color: #A9D7C2;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.row.blocks-askew {
+  background: #212121;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #8C8C8C;
+  overflow: hidden;
+}
+.row.blocks-askew .first-block,
+.row.blocks-askew .cta-wrap {
+  padding-left: 28px;
+  max-width: 602px;
+}
+.row.blocks-askew .first-block .first-block-txt,
+.row.blocks-askew .first-block .cta-wrap-txt,
+.row.blocks-askew .cta-wrap .first-block-txt,
+.row.blocks-askew .cta-wrap .cta-wrap-txt {
+  margin-bottom: 40px;
+}
+.row.blocks-askew .first-block p,
+.row.blocks-askew .cta-wrap p {
+  margin-bottom: 0;
+}
+
+.blocks-askew > div.col-6:last-child {
+  padding-right: 0;
+}
+.blocks-askew .second-block {
+  -webkit-clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(18% 0, 100% 0, 100% 100%, 0 100%);
+  background-color: #A9D7C2;
+  padding-right: 0;
+}
+
+.cards-section .card-title {
+  padding-block: 11px;
+  background-color: #A9D7C2;
+  margin-bottom: 40px;
+}
+.cards-section .card-title h2 {
+  text-align: center;
+  color: #131313;
+  font-weight: 700;
+}
+.cards-section .container {
+  border-radius: 10px;
+  background-color: #212121;
+  border: 1px solid #8C8C8C;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.cards-group .card-col {
+  margin-bottom: 30px;
+}
+.cards-group .card-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #8C8C8C;
+  border-radius: 10px;
+  background-color: #131313;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.cards-group .card-item .card-title-wrap {
+  height: 100%;
+  min-height: 38.5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #131313;
+  color: #A9D7C2;
+  text-align: center;
+  padding-inline: 16px;
+}
+.cards-group .card-item .card-title-wrap h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.form.question-form {
+  padding: 50px;
+}
+.form.question-form h3 {
+  color: #A9D7C2;
+  font-weight: 700;
+  margin-bottom: 25px;
+  letter-spacing: 0%;
+}
+.form.question-form input, .form.question-form select, .form.question-form textarea {
+  background-color: #131313;
+  border-radius: 5px;
+  color: #D1D1D1;
+  padding-left: 20px;
+  border: 1px solid rgb(140, 140, 140);
+}
+.form.question-form input, .form.question-form select {
+  height: 50px;
+  margin-bottom: 20px;
+}
+.form.question-form .input-row div {
+  width: 100%;
+}
+.form.question-form .input-row > div:first-child {
+  padding-right: 10px;
+}
+.form.question-form .input-row > div:last-child {
+  padding-left: 10px;
+}
+.form.question-form .input-row .second-block {
+  -webkit-clip-path: polygon(28% 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(28% 0, 100% 0, 100% 100%, 0 100%);
+}
+.form.question-form textarea {
+  padding-top: 14px;
+}
+.form.question-form .custom-select {
+  position: relative;
+  min-width: 200px;
+}
+.form.question-form .custom-select select {
+  -webkit-appearance: none;
+  padding-left: 20px;
+  width: 100%;
+  border: 1px solid #8d8d8d;
+  border-radius: 5px;
+  background: #131313;
+  color: #8d8d8d;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  transition: all 150ms ease;
+}
+.form.question-form .custom-select select option {
+  color: #D1D1D1;
+}
+.form.question-form .custom-select select option[value=""][disabled] {
+  display: none;
+}
+.form.question-form .custom-select select:required:invalid {
+  color: #D1D1D1;
+}
+.form.question-form .custom-select select:focus {
+  outline: none;
+  border-color: #D1D1D1;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+.form.question-form .custom-select select:hover + svg {
+  stroke: #A9D7C2;
+}
+.form.question-form .custom-select svg {
+  position: absolute;
+  right: 18px;
+  top: calc(50% - 13px);
+  width: 16px;
+  height: 10px;
+  stroke-width: 2px;
+  stroke: #9098a9;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+.form.question-form .custom-sprites {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  user-select: none;
+}
+.form.question-form button {
+  color: #131313;
+  background-color: #D1D1D1;
+  margin-top: 25px;
+  border-radius: 5px;
+  padding-inline: 45px;
+  height: 58px;
+}
+
+.block-with-form .blocks-askew {
+  align-items: stretch;
+}
+.block-with-form .blocks-askew > div:first-child {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.block-with-form .blocks-askew > div:last-child {
+  background-color: #131313;
+}
+.block-with-form .blocks-askew .first-block {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+}
+.block-with-form .blocks-askew .first-block::after {
+  position: absolute;
+  background-color: #131313;
+  -webkit-clip-path: polygon(99% 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(99% 0, 100% 0, 100% 100%, 0 100%);
+  right: -2px;
+  top: 0;
+  content: "";
+  width: 142px;
+  height: 100%;
+}
+.block-with-form .blocks-askew .first-block p {
+  max-width: 500px;
+}
+
+@media only screen and (min-width: 992px) {
+  .flex-row.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flex-row.row > [class*=col-] {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1440px) {
+  .cards-group {
+    padding-inline: 20px;
+  }
+  .cards-group .card-col {
+    padding-inline: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */
